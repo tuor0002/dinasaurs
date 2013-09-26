@@ -3,3 +3,24 @@ html {
 	font: normal 100%/1.4 georgia,serif;
 	color: #F7F2F2;
 }
+
+.dino-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.dino-list li {
+	float: left;
+	width: 25%;
+}
+
+.dino-list figure {
+	margin: 0;
+	padding: 0;
+}
+
+.dino-list img {
+	display: block;
+	width: 100%;
+}

@@ -1,8 +1,26 @@
 ---
-layout: default
+layout: defaults
 
 ---
 
 <h1> Dinasaurs </h1>
 
 <p> dinasaurs are super rock'in </p>
+
+<h2> Herbivores </h2>
+	<ul>
+	{% for dino in site.pages %}
+		{% if dino.category == "herbivore" %}
+		<li> {{dino.name}} </li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+	
+	<h2> Carnivores </h2>
+		<ul>
+		{% for dino in site.pages %}
+			{% if dino.category == "carnivore" %}
+			<li> {{dino.name}} </li>
+			{% endif %}
+		{% endfor %}
+		</ul>
